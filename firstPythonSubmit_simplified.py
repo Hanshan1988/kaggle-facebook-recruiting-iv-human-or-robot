@@ -199,18 +199,6 @@ df2_summary = \
 df2_train = df2_summary[df2_summary['outcome'] >= 0]
 df2_test = df2_summary[df2_summary['outcome'] < 0]
 
-#==============================================================================
-# 
-# p = ggplot(aes(x='mean_resp', fill='outcome'), data=df2_train)
-# p + geom_density(alpha=0.25) + ggtitle("Density of") + labs("num_bids", "Freq") + xlim(0, 1e12)
-# 
-# p = ggplot(aes(x='min_resp', fill='outcome'), data=df2_train)
-# p + geom_density(alpha=0.25) + ggtitle("Density of") + labs("num_bids", "Freq") + xlim(0, 1e8)
-# 
-# p = ggplot(aes(x='num_u_auct', fill='outcome'), data=df2_train)
-# p + geom_density(alpha=0.25) + ggtitle("Density of") + labs("num_bids", "Freq") + xlim(0, 1000)
-#==============================================================================
-
 ########################################################################
 
 # Modelling
